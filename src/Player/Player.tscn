@@ -1,33 +1,37 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://assets/player_ship.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprite/sprite_bateau_01.png" type="Texture" id=1]
 [ext_resource path="res://src/Player/Player.gd" type="Script" id=2]
 [ext_resource path="res://assets/canon.png" type="Texture" id=3]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 14.2185
-height = 53.1076
+radius = 6.81251
+height = 7.16344
 
 [node name="Player" type="KinematicBody2D"]
 collision_mask = 0
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-rotation = -1.5708
-scale = Vector2( 0.752248, 0.752248 )
+position = Vector2( 3, 0 )
+rotation = 1.57079
 texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 5, 0, 14, 22 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 2.45683, 0 )
 rotation = -1.5708
 shape = SubResource( 1 )
 
 [node name="ShootDelay" type="Timer" parent="."]
 
 [node name="Canon" type="Node2D" parent="."]
-position = Vector2( 29.2932, 0 )
+position = Vector2( 3.62417, 0 )
 rotation = -1.5708
 
 [node name="CanonSprite" type="Sprite" parent="Canon"]
+visible = false
 position = Vector2( 0, -7.29204 )
 rotation = 1.5708
 scale = Vector2( 0.5, 0.5 )
@@ -39,4 +43,8 @@ position = Vector2( 0, 5.36829 )
 [node name="Debut" type="Sprite" parent="."]
 
 [node name="Fin" type="Sprite" parent="."]
+
+[node name="Visibility" type="Position2D" parent="."]
+position = Vector2( -7.28375, -0.00473401 )
+scale = Vector2( 0.197395, 0.256904 )
 [connection signal="timeout" from="ShootDelay" to="." method="_on_ShootDelay_timeout"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/br_enemy_basic_sailing.wav-c644d505cb0502fc71ca8ae07aac1bdf.sample"
+
+[deps]
+
+source_file="res://assets/sound/br_enemy_basic_sailing.wav"
+dest_files=[ "res://.import/br_enemy_basic_sailing.wav-c644d505cb0502fc71ca8ae07aac1bdf.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

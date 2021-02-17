@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/br_enemy_strong_death-003.wav-3ce48ac85041c061948ec7da0b821e72.sample"
+
+[deps]
+
+source_file="res://assets/sound/br_enemy_strong_death-003.wav"
+dest_files=[ "res://.import/br_enemy_strong_death-003.wav-3ce48ac85041c061948ec7da0b821e72.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/br_player_cannon-002.wav-0d1975b20616fcc84442269bb53f4ee8.sample"
+
+[deps]
+
+source_file="res://assets/sound/br_player_cannon-002.wav"
+dest_files=[ "res://.import/br_player_cannon-002.wav-0d1975b20616fcc84442269bb53f4ee8.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

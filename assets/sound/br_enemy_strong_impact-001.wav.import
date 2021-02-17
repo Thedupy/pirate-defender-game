@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/br_enemy_strong_impact-001.wav-f1f0cb847d6944ab4b235a46d4eaff36.sample"
+
+[deps]
+
+source_file="res://assets/sound/br_enemy_strong_impact-001.wav"
+dest_files=[ "res://.import/br_enemy_strong_impact-001.wav-f1f0cb847d6944ab4b235a46d4eaff36.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

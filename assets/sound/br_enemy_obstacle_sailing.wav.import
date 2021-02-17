@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/br_enemy_obstacle_sailing.wav-1e8020ab3cb2344605e6e4d51520c4ae.sample"
+
+[deps]
+
+source_file="res://assets/sound/br_enemy_obstacle_sailing.wav"
+dest_files=[ "res://.import/br_enemy_obstacle_sailing.wav-1e8020ab3cb2344605e6e4d51520c4ae.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/br_enemy_obstacle_alert.wav-b16e08f1352a152b4d4e33d453182ed7.sample"
+
+[deps]
+
+source_file="res://assets/sound/br_enemy_obstacle_alert.wav"
+dest_files=[ "res://.import/br_enemy_obstacle_alert.wav-b16e08f1352a152b4d4e33d453182ed7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

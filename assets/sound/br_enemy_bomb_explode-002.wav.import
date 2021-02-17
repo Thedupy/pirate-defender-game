@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/br_enemy_bomb_explode-002.wav-2c131d65cf076f6c3d91fc11bccf0f5a.sample"
+
+[deps]
+
+source_file="res://assets/sound/br_enemy_bomb_explode-002.wav"
+dest_files=[ "res://.import/br_enemy_bomb_explode-002.wav-2c131d65cf076f6c3d91fc11bccf0f5a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

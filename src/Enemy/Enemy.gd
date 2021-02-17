@@ -17,9 +17,11 @@ func _process(delta):
 		position += self.velocity * delta
 
 
-func _on_Enemy_body_entered(body):
+func _on_Enemy_body_entered(_body):
 	print("j'ai atteint l'ile")
 	target = true
+	Events.emit_signal("isle_reached")
+	print("Event envoyé")
 
 
 func _on_BulletCollision_area_entered(area):
@@ -28,12 +30,14 @@ func _on_BulletCollision_area_entered(area):
 	destroy()
 
 
-func _on_BulletCollision_body_entered(body):
+func _on_BulletCollision_body_entered(_body):
 	# Player
 	print("Joueur m'as touché")
+	_body.take_damage(1)
 	destroy()
 
 func destroy():
+	Events.emit_signal("enemy_killed")
 	var number = randi() % 4 + 1
 	for i in range(number):	
 		var offset = Vector2(rand_range(-20,20), rand_range(-20, 20))

@@ -1,135 +1,56 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://src/Player/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/tiles_sheet.png" type="Texture" id=2]
 [ext_resource path="res://src/Stages/World.gd" type="Script" id=3]
 [ext_resource path="res://src/EnemyGenerator/EnemyGenerator.gd" type="Script" id=4]
-[ext_resource path="res://icon.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprite/sprite_ile_01.png" type="Texture" id=5]
 
-[sub_resource type="TileSet" id=1]
-0/name = "tiles_sheet.png 0"
-0/texture = ExtResource( 2 )
-0/tex_offset = Vector2( 0, 0 )
-0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 512, 256, 64, 64 )
-0/tile_mode = 0
-0/occluder_offset = Vector2( 0, 0 )
-0/navigation_offset = Vector2( 0, 0 )
-0/shape_offset = Vector2( 0, 0 )
-0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape_one_way = false
-0/shape_one_way_margin = 0.0
-0/shapes = [  ]
-0/z_index = 0
+[sub_resource type="CircleShape2D" id=1]
+radius = 56.0089
 
-[sub_resource type="TileSet" id=2]
-0/name = "tiles_sheet.png 0"
-0/texture = ExtResource( 2 )
-0/tex_offset = Vector2( 0, 0 )
-0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 0, 192, 192 )
-0/tile_mode = 2
-0/autotile/icon_coordinate = Vector2( 0, 0 )
-0/autotile/tile_size = Vector2( 64, 64 )
-0/autotile/spacing = 0
-0/autotile/occluder_map = [  ]
-0/autotile/navpoly_map = [  ]
-0/autotile/priority_map = [  ]
-0/autotile/z_index_map = [  ]
-0/occluder_offset = Vector2( 0, 0 )
-0/navigation_offset = Vector2( 0, 0 )
-0/shape_offset = Vector2( 0, 0 )
-0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape_one_way = false
-0/shape_one_way_margin = 0.0
-0/shapes = [  ]
-0/z_index = 0
-
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 359.54, 10 )
-
-[sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 352.016, 10 )
-
-[sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 10, 352.941 )
-
-[sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 10, 353.072 )
-
-[sub_resource type="Curve2D" id=7]
+[sub_resource type="Curve2D" id=2]
 _data = {
-"points": PoolVector2Array( 187.18, -295, -187.18, 295, -84.8806, -49.222, -138.702, -150.837, 138.702, 150.837, -90.22, 773.039, -175.06, 168.19, 175.06, -168.19, 824.145, 775.709, 164.287, 90.7691, -164.287, -90.7691, 825.48, -54.5613, 0, 0, 0, 0, 137.471, -116.864, 0, 0, 0, 0, -21.6794, -73.7037, 558.846, -181.538, -558.846, 181.538, -84.8806, -49.222 )
+"points": PoolVector2Array( 187.18, -295, -187.18, 295, -84.8806, -49.222, -138.702, -150.837, 138.702, 150.837, -90.22, 773.039, -175.06, 168.19, 175.06, -168.19, 824.145, 775.709, 164.287, 90.7691, -164.287, -90.7691, 825.48, -54.5613, 0, 0, 0, 0, 222.135, -136.9, 149.275, -78.8949, -149.275, 78.8949, -84.8806, -49.222 )
 }
 
 [node name="World" type="Node2D"]
 script = ExtResource( 3 )
 
-[node name="Water" type="TileMap" parent="."]
-tile_set = SubResource( 1 )
-format = 1
-tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 0, 0, 65544, 0, 0, 65545, 0, 0, 65546, 0, 0, 131072, 0, 0, 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0, 131078, 0, 0, 131079, 0, 0, 131080, 0, 0, 131081, 0, 0, 131082, 0, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 262154, 0, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 327687, 0, 0, 327688, 0, 0, 327689, 0, 0, 327690, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0, 655360, 0, 0, 655361, 0, 0, 655362, 0, 0, 655363, 0, 0, 655364, 0, 0, 655365, 0, 0, 655366, 0, 0, 655367, 0, 0, 655368, 0, 0, 655369, 0, 0, 655370, 0, 0 )
-
-[node name="Island" type="TileMap" parent="."]
-tile_set = SubResource( 2 )
-format = 1
-tile_data = PoolIntArray( 262148, 0, 0, 262149, 0, 1, 262150, 0, 2, 327684, 0, 65536, 327685, 0, 65537, 327686, 0, 65538, 393220, 0, 131072, 393221, 0, 131073, 393222, 0, 131074 )
-
 [node name="IleMilieu" type="StaticBody2D" parent="."]
-position = Vector2( 352, 352 )
+position = Vector2( 151, 152 )
 collision_layer = 4
 collision_mask = 0
 
+[node name="Sprite" type="Sprite" parent="IleMilieu"]
+texture = ExtResource( 5 )
+
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="IleMilieu"]
-polygon = PoolVector2Array( -83.5418, -75.0118, -55.036, -88.0836, -27.5056, -93.9615, -8.89142, -94.2257, 9.53494, -91.3121, 44.734, -92.6508, 61.7429, -90.9185, 76.547, -81.8628, 86.7052, -56.5856, 93.7135, -20.9929, 93.8709, -5.87378, 90.7999, 8.53659, 93.5557, 42.476, 90.5634, 63.5797, 81.3502, 76.6514, 38.1979, 91.7705, 16.1493, 94.2904, -9.36411, 91.613, -37.751, 92.6819, -56.3748, 92.1643, -72.5963, 85.1559, -86.2192, 57.2801, -94.4875, 25.6245, -93.6212, 2.70969, -91.3376, -20.3626, -93.4637, -36.2692, -91.81, -59.8141 )
+position = Vector2( -4, -21 )
+polygon = PoolVector2Array( -6, -8, 11, -8, 23, -6, 34, 7, 34, 13, 31, 17, 35, 27, 34, 39, 26, 47, 15, 49, 9, 53, -6, 53, -15, 49, -25, 35, -25, 29, -23, 23, -27, 14, -26, 7, -18, 1, -14, -5 )
+
+[node name="NoPowerUpZone" type="Area2D" parent="IleMilieu"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="IleMilieu/NoPowerUpZone"]
+visible = false
+shape = SubResource( 1 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 74.3682, 56.8147 )
 collision_mask = 4
-
-[node name="Walls" type="Node" parent="."]
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Walls"]
-position = Vector2( 349.237, -10.2156 )
-collision_layer = 8
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D"]
-shape = SubResource( 3 )
-
-[node name="StaticBody2D2" type="StaticBody2D" parent="Walls"]
-collision_layer = 8
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D2"]
-position = Vector2( 351.78, 713.524 )
-shape = SubResource( 4 )
-
-[node name="StaticBody2D3" type="StaticBody2D" parent="Walls"]
-position = Vector2( -17.9797, 337.119 )
-collision_layer = 8
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D3"]
-position = Vector2( 7.7782, 14.8469 )
-shape = SubResource( 5 )
-
-[node name="StaticBody2D4" type="StaticBody2D" parent="Walls"]
-collision_layer = 8
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D4"]
-position = Vector2( 714.094, 351.054 )
-shape = SubResource( 6 )
+SPEED = 50.0
 
 [node name="EnemyGenerator" type="Path2D" parent="."]
-position = Vector2( 167.355, 171.389 )
-scale = Vector2( 0.486343, 0.501088 )
-curve = SubResource( 7 )
+position = Vector2( -27.6326, -19.2247 )
+scale = Vector2( 0.463867, 0.446555 )
+curve = SubResource( 2 )
 script = ExtResource( 4 )
+activated = false
 
 [node name="GenPosition" type="PathFollow2D" parent="EnemyGenerator"]
 position = Vector2( -84.8806, -49.222 )
 rotation = 2.13346
-
-[node name="Sprite" type="Sprite" parent="EnemyGenerator/GenPosition"]
-texture = ExtResource( 5 )
 
 [node name="EnemyTimer" type="Timer" parent="EnemyGenerator"]
 autostart = true
@@ -143,4 +64,18 @@ text = "Life: 10"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="PlayerLife" type="Label" parent="."]
+margin_top = 13.0813
+margin_right = 47.0
+margin_bottom = 27.0813
+text = "Player: 3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PowerupGeneration" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
 [connection signal="timeout" from="EnemyGenerator/EnemyTimer" to="EnemyGenerator" method="_on_EnemyTimer_timeout"]
+[connection signal="timeout" from="PowerupGeneration" to="." method="_on_PowerupGeneration_timeout"]
